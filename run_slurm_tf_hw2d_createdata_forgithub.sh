@@ -32,7 +32,7 @@ python -V
 # Set the number of OMP threads *per process* to avoid overloading of the node!
 export OMP_NUM_THREADS=1
 
-srun python src/tf_hw2d/subsampling/create_dataset.py --original_path="/ptmp/varti/turbulence/tf_hw2d/FFT_1800_512_c5_CPUnumba_dt01_nu5e-9_5" --new_path="/ptmp/varti/turbulence/tf_hw2d/FFT_1800_512_c5_CPUnumba_dt01_nu5e-9_5_dataset_s64_t1" --spatial_downsampling_ratio=8.0 --time_downsampling_ratio=1 --sampling_method="fourier"
+srun python src/tf_hw2d/subsampling/create_dataset.py --original_path="FFT_1800_512_c5_CPUnumba_dt01_nu5e-9_5" --new_path="FFT_1800_512_c5_CPUnumba_dt01_nu5e-9_5_dataset_s64_t1" --spatial_downsampling_ratio=8.0 --time_downsampling_ratio=1 --sampling_method="fourier"
 
 
 
